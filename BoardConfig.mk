@@ -136,6 +136,4 @@ BOARD_HARDWARE_CLASS := \
     hardware/cyanogen   \
     device/moto/shamu/cmhw
 
-USE_CLANG_PLATFORM_BUILD := true
-
 -include vendor/motorola/shamu/BoardConfigVendor.mk

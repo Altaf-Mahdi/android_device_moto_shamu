@@ -131,7 +131,7 @@ DONT_DEXPREOPT_PREBUILTS := true
 # CMHW
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS := \
-    hardware/cyanogen   \
+    hardware/cyanogen/cmhw   \
     device/moto/shamu/cmhw
 
 -include vendor/motorola/shamu/BoardConfigVendor.mk

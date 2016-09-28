@@ -402,6 +402,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     Gello
 
+# MotoDoze
+PRODUCT_PACKAGES += \
+    MotoDoze
+
 # OEM Unlock reporting
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.oem_unlock_supported=1

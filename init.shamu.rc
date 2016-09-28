@@ -557,6 +557,14 @@ service mdm_helper_proxy /system/bin/mdm_helper_proxy
 on property:sys.shutdown.requested=*
     stop mdm_helper_proxy
 
+service ril-daemon /system/bin/rild
+    class main
+    socket rild stream 660 root radio
+    socket sap_uim_socket1 stream 660 bluetooth bluetooth
+    socket rild-debug stream 660 radio system
+    user root
+    group radio cache inet misc audio log readproc wakelock
+
 # Start mdm_helper_proxy after RIL.
 on property:ro.mdm_helper_proxy_req=true
     start mdm_helper_proxy

@@ -20,7 +20,7 @@ set -e
 VENDOR=motorola
 DEVICE=shamu
 
-INITIAL_COPYRIGHT_YEAR=2016
+INITIAL_COPYRIGHT_YEAR=2014
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
